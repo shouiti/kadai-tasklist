@@ -12,5 +12,8 @@
   <%= f.label :content, 'タスク' %>
   <%= f.text_field :content %>
   
+  <%= f.label :status, '状況' %>
+  <%= f.select :status, [ "予定", "進行中", "完成"] %>
+  
   <%= f.submit '入力' %>
 <% end %>
