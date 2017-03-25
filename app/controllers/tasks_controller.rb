@@ -19,7 +19,7 @@ class TasksController < ApplicationController
       redirect_to @task
     else
       flash.now[:danger] = 'Taskの入力に失敗しました'
-      render new
+      render :new
     end
   end
   
